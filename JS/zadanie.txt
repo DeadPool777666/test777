@@ -1,0 +1,63 @@
+1.     <script>
+        let name;
+        name=prompt ("Введите имя");
+        alert(' Привет его имя '+name+"!")
+        </script>
+
+
+
+2.          <script>
+        let a,b,age;
+
+        a=2024
+        b=prompt("Введите свой год рождения");
+        age=a-b;
+        alert('Ваш возраст '+age)
+        </script>
+
+3.      <script>
+        let b,pirimetr;
+
+        b=prompt("Введите сторону квадрата");
+        pirimetr=b*4;
+        alert('Пириметр квадрата равен '+ pirimetr)
+        </script>
+
+4.          <script>
+        let r,p,S;
+
+        r=prompt("Введите радиус окружности");
+        p=prompt("Введите пириметр окружности")
+        S=p*(r**2);
+        alert('Площадь круга равна '+S)
+        </script>
+
+
+5.      <script>
+        let v,t,S;
+
+        S=prompt("Расстояние между двумя городами");
+        t=prompt("За какое время вы хотите доехать")
+        v=S/t;
+        alert('Вам нужно двигаться со скоростью'+v+'км/час')
+        </script>
+
+6.      <script>
+        let Dollar,Kurs,euro;
+
+        Dollar=prompt("Сколько у вас сейчас долларов?");
+        Kurs=0.92
+        euro=Dollar*Kurs;
+        alert('Вот столько евро вы получите '+euro)
+        </script>
+
+7.      <script>
+        let Giga
+        let Mega = 820
+        Giga=prompt("Обьём вашей флеш карты в Гб?");
+        multiplication = Giga*1024
+        memory =  Math.floor(multiplication/ Mega)
+        alert('Вот столько файлов помещается на вашу карту '+ memory)
+        </script>
+
+8.      
