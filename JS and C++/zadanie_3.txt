@@ -1,0 +1,31 @@
+1.
+<script>
+        let b;
+        b = parseInt(prompt("Введите число: "));
+        if (b<0) {
+            alert("Число отрицательное");
+        } else if (b>0) {
+            alert("Число положительное");
+        } else if (b==0) {
+            alert("Ваше число равно 0");
+        }
+    </script>
+2.
+  <script>
+        let b;
+        b = parseInt(prompt("Сколько вам лет: "));
+        if (b<0) {
+            alert("ERROR 404");
+        } else if (b>1 &&  b <120) {
+            alert("Всё верно");
+        } else if (b >120) {
+            alert("ERROR 404");
+        }
+    </script>
+3.
+<script>
+        let b;
+        b = parseInt(prompt("Введите число: "));
+        alert(Math.abs(b));
+    </script>
+4.
