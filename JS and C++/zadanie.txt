@@ -11,7 +11,9 @@
 
         a=2024
         b=prompt("Введите свой год рождения");
-        age=a-b;
+        age=a-b;       one_number = Math.floor(num / 100); // первая цифра числа
+            two_number =  Math.floor((num % 100) / 10);// вторая цифра числа
+            three_number = num % 10; // третью цифра числа
         alert('Ваш возраст '+age)
         </script>
 
@@ -63,7 +65,7 @@
 8.      let wallet;
             let schokolade;
 
-            wallet = parseFloat(prompt("Сколько у Вас денег? "));
+            wallet = parseInt(prompt("Сколько у Вас денег? "));
             schokolade = parseInt(prompt("Сколько стоит шоколадка? "));
 
             if (wallet < schokolade) {
@@ -83,10 +85,9 @@ let num;
 
             let one_number, two_number, three_number, result;
 
-            // изымание числа
-            one_number = Math.floor(num / 100); // изымаем первую цифру числа
-            two_number =  Math.floor((num % 100) / 10);// изымаем вторую цифру числа
-            three_number = num % 10; // изымаем третью цифру числа
+            one_number = Math.floor(num / 100); // первая цифра числа
+            two_number =  Math.floor((num % 100) / 10);// вторая цифра числа
+            three_number = num % 10; // третью цифра числа
 
             result = three_number * 100 + two_number * 10 + one_number;
             alert("Перевёрнутое число: " + result);

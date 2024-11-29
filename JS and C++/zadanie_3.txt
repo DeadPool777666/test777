@@ -29,3 +29,15 @@
         alert(Math.abs(b));
     </script>
 4.
+<script>
+        let hour,minut,seconds;
+        b = parseInt(prompt("Введите число: "));
+        if (b<0) {
+            alert("ERROR 404");
+        } else if (b>1 &&  b <61) {
+            alert("Всё верно");
+        } else if (b >61) {
+            alert("ERROR 404");
+        }
+    </script>
+5.
