@@ -1,22 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    debug <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
     <script>
-        //Написать алгортм, классифицирующий треугольники (остроугольные, прямоугольные, тупоугольные, равнобедренные, равносторонние), если даны углы.
-      let A=("Введите градусы угла A");
-      let B=("Введите градусы угла B");
-      let C=("Введите градусы угла C");
-
-      if(A===A && B,B===C && A,C===A && B){
-        alert("У вас равносторонний треугольник");
+      let KZT,EUR,USD,UAN,VALUE
+      KZT=parseInt(prompt("Введите сколько у вас тенге?"))
+      VALUE=prompt("Введите в какой валюте вы хотите получить ответь:EUR,USD,UAN?")
+      EUR=550;
+      USD=500;
+      UAN=13;
+      if(VALUE==="EUR"){
+        alert("Вы получите: "+ Math.round(KZT/EUR)+"евро")
       }
-      else if(A<90,B<90,C<90){
-        alert("У вас остроугольный треугольник");
+      else if(VALUE==="USD"){
+        alert("Вы получите: "+Math.round(KZT/USD)+"долларов")
+      }
+      else if(VALUE==="UAN"){
+        alert("Вы получите: "+Math.round(KZT/UAN)+"гривен")
+      }
+      else{
+        alert("Вы ввели неправильно валюту!")
       }
     </script>   
 </html>
