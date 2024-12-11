@@ -1,0 +1,66 @@
+1 
+        let b;
+        b = parseInt(prompt("Введите число: "));
+        if (b<0) {
+            alert("Число отрицательное");
+        } else if (b>0) {
+            alert("Число положительное");
+        } else if (b==0) {
+            alert("Ваше число равно 0");
+        }
+
+2
+         let b;
+        b = parseInt(prompt("Сколько вам лет: "));
+        if (b<0) {
+            alert("ERROR 404");
+        } else if (b>1 &&  b <120) {
+            alert("Всё верно");
+        } else if (b >120) {
+            alert("ERROR 404");
+        }
+
+3.1        let number=(parseFloat(prompt("Введите число:")));
+        let modul=Math.abs(number);    
+        alert("Ваше число ровно:" + modul);
+        
+3.2     let a,number2,number3;
+            a = prompt('Введите число:');
+            if (a < 0) {
+                number2 = a ** 2;
+                number3 = number2 ** 0.5;
+                alert(number3);
+            } else {
+                alert(a)
+            }
+
+4       let hour,minut,seconds;
+        b = parseInt(prompt("Введите число: "));
+        if (b<0) {
+            alert("ERROR 404");
+        } else if (b>1 &&  b <61) {
+            alert("Всё верно");
+        } else if (b >61) {
+            alert("ERROR 404");
+        }
+
+5       let hours, minuts, seconds;
+    hours = prompt('Какой час?');
+    minuts = prompt('Cколько минут?');
+    seconds = prompt('Сколько секунд?');
+    if (hours >= 0 && hours <= 23) {
+        if (minuts >= 0 && minuts <= 59) {
+            if (seconds >= 0 && seconds <= 59) {
+                alert('Время верное')
+            } else {
+                alert('Ошибка в секундах')
+            }
+        } else {
+            alert('Ошибка в минутах')
+        }
+    } else {
+        alert('Ошибка в часах')
+    }
+
+
+6       

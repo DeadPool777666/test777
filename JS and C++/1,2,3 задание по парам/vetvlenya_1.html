@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let x = parseInt(prompt("Введите координату x:"));
+    let y = parseInt(prompt("Введите координату y:"));
+
+    // Определяем, в какой четверти или на какой оси находится точка
+    if (x === 0 && y === 0) {
+        alert("Точка находится в начале координат (0, 0).");
+    } else if (x > 0 && y > 0) {
+        alert("Точка находится в первой четверти.");
+    } else if (x < 0 && y > 0) {
+        alert("Точка находится во второй четверти.");
+    } else if (x < 0 && y < 0) {
+        alert("Точка находится в третьей четверти.");
+    } else if (x > 0 && y < 0) {
+        alert("Точка находится в четвертой четверти.");
+    }
+    else if (x === 0) {
+        alert("Точка находится на оси Y.");
+    } else if (y === 0) {
+        alert("Точка находится на оси X.");
+    } 
+    </script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+1. let month=parseInt(prompt("Введите номер месяца"))
+      switch(month){
+        case 1:
+          alert("Январь")
+          break;
+          case 2:
+          alert("февраль")
+          break;
+          case 3:
+          alert("март")
+          break;
+          case 4:
+          alert("апрель")
+          break;
+          case 5:
+          alert("май")
+          break;
+          case 6:
+          alert("июнь")
+          break;
+          case 7:
+          alert("июль")
+          break;
+          case 8:
+          alert("август")
+          break;
+          case 9:
+          alert("сентябрь")
+          break;
+          case 10:
+          alert("октябрь")
+          break;
+          case 11:
+          alert("ноябрь")
+          break;
+          case 12:
+          alert("декабрь")
+          break;
+          default:
+            alert("Вы ввели неправильное число")
+      }
+2. let a,b,znak
+      a=parseInt(prompt("Введите первое число"))
+      b=parseInt(prompt("Введите второе число"))
+      znak=prompt("Введите знак(+,-,*,/)")
+      switch(znak){
+          case "+":
+            alert("Ответь при +: "+(a+b));
+            break;
+          case "-":
+            alert("Ответь при -: "+(a-b));
+            break;
+          case "*":
+            alert("Ответь при *: "+(a*b));
+            break;
+          case "/":
+            alert("Ответь при /: "+(a/b));
+            break;
+          default:
+            alert("Ошибка введите знак правильно")
+      }
+ Тернарный оператор
+1. <script>
+      let a=+prompt("Введите первое число")
+      let b=+prompt("Введите второе число")
+      let result=(a>b)? a: b;
+      alert("Большее число "+ result)
+    </script> 
+
+2. let number=+prompt("Введите число")
+      let result=(number%5===0)? "Ваше число делиться на 5" : "Ваше число не делиться на 5";
+      alert(result)
+
+3. let planet=prompt("Введите название планеты")
+      let result=(planet==="Земля"||planet==="земля")? "Привет, землянин!" : "Привет, инопланетянин!";
+      alert(result)

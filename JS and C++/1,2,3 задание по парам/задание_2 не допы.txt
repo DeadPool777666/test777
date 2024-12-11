@@ -1,0 +1,74 @@
+1.<script>
+       let a
+       a=parseInt(prompt("Введите ваш возраст:"))
+       if(0<=a&&a<=2){
+        alert('Вы ребенок');
+       }
+       else if (a>=3&&a<12){
+        alert('Вы ребенок')
+       }
+       else if (a>=12&&a<18){
+        alert('Вы подросток')
+       }
+       else if(a>=18&&a<60){
+        alert("Вы взрослый")
+       }
+       else{
+        alert("Вы пенсионер")
+       }
+    </script>   
+
+2. let number
+      number=parseInt(prompt("Выберите цифру от 0-9"))
+      if(number==0){
+        alert(")")
+      }
+      else if(number==1){
+        alert("!")
+      }
+      else if(number==2){
+        alert("@")
+      }
+      else if(number==3){
+        alert("#")
+      }
+      else if(number==4){
+        alert("$")
+      }
+      else if(number==5){
+        alert("%")
+      }
+      else if(number==6){
+        alert("^")
+      }
+      else if(number==7){
+        alert("&")
+      }
+      else if(number==8){
+        alert("*")
+      }
+      else if(number==9){
+        alert("(")
+      }
+      else{
+        alert("ERROR 404")
+      }
+
+3. let KZT,EUR,USD,UAN,VALUE
+      KZT=parseInt(prompt("Введите сколько у вас тенге?"))
+      VALUE=prompt("Введите в какой валюте вы хотите получить ответь:EUR,USD,UAN?")
+      EUR=550;
+      USD=500;
+      UAN=13;
+      if(VALUE==="EUR"){
+        alert("Вы получите: "+ Math.round(KZT/EUR)+"евро")
+      }
+      else if(VALUE==="USD"){
+        alert("Вы получите: "+Math.round(KZT/USD)+"долларов")
+      }
+      else if(VALUE==="UAN"){
+        alert("Вы получите: "+Math.round(KZT/UAN)+"гривен")
+      }
+      else{
+        alert("Вы ввели неправильно валюту!")
+      }
