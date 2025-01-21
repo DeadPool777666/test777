@@ -63,21 +63,18 @@
         </script>
 
 8.      
-let money = prompt("Введите сумму денег в кошельке:");
-let price = prompt("Введите цену одной шоколадки:");
+        let money = parseFloat(prompt("Введите сумму денег в кошельке:"));
+        let price = parseFloat(prompt("Введите цену одной шоколадки:"));
 
-money = parseFloat(money);
-price = parseFloat(price);
+        let chocolates = Math.floor(money / price); 
+        let change = money - chocolates * price; 
 
-let chocolates = Math.floor(money / price); // Количество шоколадок
-let change = money - chocolates * price; // Сдача
-
-alert("Вы можете купить " + chocolates + " шоколадок и у вас останется " + change + " сдачи.");
+        alert("Вы можете купить " + chocolates + " шоколадок и у вас останется " + change + " сдачи.");
 
             
             
 9.	
-let num;
+                let num;
             num = parseInt(prompt("Введите трёхзначное число: "));
 
             let one_number, two_number, three_number, result;

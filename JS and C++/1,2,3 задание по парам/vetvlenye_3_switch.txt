@@ -1,0 +1,133 @@
+1. CASE 
+
+let number;
+number = parseInt(prompt('Какая оценка: '))
+
+switch (number) {
+    case 1:
+        alert("Кол!")
+        break;
+    case 2:
+        alert("Двойка!")
+        break;
+    case 3:
+        alert("Тройка")
+        break;
+    case 4:
+        alert("Четыри")
+        break;
+    case 5:
+        alert("Отлично")
+        break;
+    default:
+        alert("Вы не правильно ввели цифру")
+}
+2. let uroki = (week) => {
+    switch(week) {
+        case 1:
+            alert("Понедельник сегодня -7 уроков");
+            break
+        case 2:
+            alert("Вторник сегодня -7 уроков");
+            break
+        case 3:
+            alert("Среда сегодня -6 уроков");
+            break
+        case 4:
+            alert("Четверг сегодня -8 уроков");
+            break
+        case 5:
+            alert("Пятница сегодня -5 уроков");
+            break
+        case 6:
+            alert("Суббота сегодня -выходной день");
+            break
+        case 7:
+            alert("Воскресенье сегодня -выходной день");
+            break
+    }
+
+
+3.
+
+
+4. let number=Number(prompt("Введите цифру для дня недели"));
+    switch(number) {
+        case 1:
+            alert("Понедельник")
+            break
+        case 2:
+            alert("Вторник")
+            break
+        case 3:
+            alert("Среда")
+            break
+        case 4:
+            alert("Четверг")
+            break
+        case 5:
+            alert("Пятница")
+            break
+        case 6:
+            alert("Суббота")
+            break
+        case 7:
+            alert("Воскресенье")
+            break
+        default:
+            alert("Нет такого дня недели")
+    }
+
+5. const fun = (skobki) => {
+    switch(scobki) {
+        case '(':
+            alert("Открытая круглая скобка")
+            break
+        case ')':
+            alert("Закрытая круглая скобка")
+            break
+        case '{':
+            alert("Открытая фигурная скобка")
+            break
+        case '}':
+            alert("Закрытая фигурная скобка")
+            break
+        case '[':
+            alert("Открытая квадратная скобка")
+            break
+        case ']':
+            alert("Закрытая квадратная скобка")
+            break
+        default:
+            alert("Неверный ввод данных")
+    }
+}
+
+
+6.    const fun = (number) => {
+    switch(number) {
+        case 1:
+            alert("Красный")
+            break
+        case 2:
+            alert("Синий")
+            break
+        case 3:
+            alert("Ораньжевый")
+            break
+        case 4:
+            alert("Желтый")
+            break
+        case 5:
+            alert("Серый")
+            break
+        case 6:
+            alert("Белый")
+            break
+        case 7:
+            alert("Red")
+            break
+        default:
+            alert("Нет цвета под таким номером")
+    }
+}

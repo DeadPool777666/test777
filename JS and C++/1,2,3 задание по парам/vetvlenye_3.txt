@@ -1,0 +1,25 @@
+1. CASE 
+
+let number;
+number = parseInt(prompt('Какая оценка: '))
+
+switch (number) {
+    case 1:
+        alert("Кол!")
+        break;
+    case 2:
+        alert("Двойка!")
+        break;
+    case 3:
+        alert("Тройка")
+        break;
+    case 4:
+        alert("Четыри")
+        break;
+    case 5:
+        alert("Отлично")
+        break;
+    default:
+        alert("Вы не правильно ввели цифру")
+}
+2. 

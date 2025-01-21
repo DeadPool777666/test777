@@ -20,31 +20,19 @@
             alert("ERROR 404");
         }
 
-3.1        let number=(parseFloat(prompt("Введите число:")));
-        let modul=Math.abs(number);    
-        alert("Ваше число ровно:" + modul);
         
-3.2     let a,number2,number3;
+3  let a,number_2,number_3;
             a = prompt('Введите число:');
             if (a < 0) {
-                number2 = a ** 2;
-                number3 = number2 ** 0.5;
+                number_2 = a ** 2;
+                number_3 = number2 ** 0.5;
                 alert(number3);
             } else {
                 alert(a)
             }
+     
 
-4       let hour,minut,seconds;
-        b = parseInt(prompt("Введите число: "));
-        if (b<0) {
-            alert("ERROR 404");
-        } else if (b>1 &&  b <61) {
-            alert("Всё верно");
-        } else if (b >61) {
-            alert("ERROR 404");
-        }
-
-5       let hours, minuts, seconds;
+4      let hours, minuts, seconds;
     hours = prompt('Какой час?');
     minuts = prompt('Cколько минут?');
     seconds = prompt('Сколько секунд?');
@@ -63,24 +51,21 @@
     }
 
 
-6 
-let x = parseFloat(prompt("Введите координату x:"));
-let y = parseFloat(prompt("Введите координату y:"));
-
-if (x === 0 && y === 0) {
-    alert("Точка находится в начале координат.");
-} 
-} else if (x > 0 && y > 0) {
-    alert("Точка находится в первой четверти.");
-} else if (x < 0 && y > 0) {
-    alert("Точка находится во второй четверти.");
-} else if (x < 0 && y < 0) {
-    alert("Точка находится в третьей четверти.");
-} else if (x > 0 && y < 0) {
-    alert("Точка находится в четвертой четверти.");
-}
-else if (x === 0) {
-    alert("Точка лежит на оси Y.");
-} else if (y === 0) {
-    alert("Точка лежит на оси X.");
-
+5     let x = parseInt(prompt("Введите x:"));
+    let y = parseInt(prompt("Введите y:"));
+    if (x === 0 && y === 0) {
+        alert("Точка находится в нулевой координате");
+    } else if (x > 0 && y > 0) {
+        alert("Точка находится в первой четверти");
+    } else if (x < 0 && y > 0) {
+        alert("Точка находится во второй четверти");
+    } else if (x < 0 && y < 0) {
+        alert("Точка находится в третьей четверти");
+    } else if (x > 0 && y < 0) {
+        alert("Точка находится в четвертой четверти");
+    }
+    else if (x === 0) {
+        alert("Точка находится на оси Y.");
+    } else if (y === 0) {
+        alert("Точка находится на оси X.");
+    }   
