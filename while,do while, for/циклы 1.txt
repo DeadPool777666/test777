@@ -1,0 +1,30 @@
+1. let i=1, a=prompt("Введит сколько вам нужно знак #?")
+        while(i<=a){
+            alert("#")
+            i++;
+        }
+
+2. let a=Number(prompt("Введит сколько вам нужно чисел?"));
+        while(a>=0){
+            console.log(a);
+            a--;
+        }
+
+3.    let a=Number(prompt("Введит сколько вам нужно число?"));
+        let b=Number(prompt("Введит степень для этого числа"));
+        const origA = a;
+        while(b > 1){
+            a = a * origA;
+            b--;
+        }
+        console.log(a);
+
+4.     const a=Number(prompt("Введите первое число"));
+        const b=Number(prompt("Введите второе число"));
+        let i = 0;
+        while(Math.min(a, b) >= i){
+            if(a % i === 0 && b % i === 0){
+                console.log(i);
+            }
+            i++;
+        }
