@@ -1,0 +1,47 @@
+1. let i=1, a=prompt("Введит сколько вам нужно знак #?")
+        while(i<=a){
+            alert("#")
+            i++;
+        }
+
+2. let a=Number(prompt("Введит сколько вам нужно чисел?"));
+        while(a>=0){
+            console.log(a);
+            a--;
+        }
+
+3.    let a=Number(prompt("Введит сколько вам нужно число?"));
+        let b=Number(prompt("Введит степень для этого числа"));
+        const origA = a;
+        while(b > 1){
+            a = a * origA;
+            b--;
+        }
+        console.log(a);
+
+4.     const a=Number(prompt("Введите первое число"));
+        const b=Numbe r(prompt("Введите второе число"));
+        let i = 0;
+        while(Math.min(a, b) >= i){
+            if(a % i === 0 && b % i === 0){
+                console.log(i);
+            }
+            i++;
+        }
+
+5.      const FactoNum = Number(prompt("Введите число"));
+        let resul = 1, step = 2;
+         while(FactoNum>=step ){
+            resul = step * resul
+            step++;
+         }
+         console.log(resul)
+
+
+do while
+
+1. let a;
+        do{
+            a = Number(prompt("Введите ответ на эту задачу 2 + 2 * 2"));
+        } while(a !== 6)
+        alert("Вы решили првильтно!")
