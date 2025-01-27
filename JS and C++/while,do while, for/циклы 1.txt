@@ -44,4 +44,22 @@ do while
         do{
             a = Number(prompt("Введите ответ на эту задачу 2 + 2 * 2"));
         } while(a !== 6)
-        alert("Вы решили првильтно!")
+        alert("Вы решили правильно!")
+
+2.  let a=1000,b=50;
+        do{
+           a=a/2
+        } while(a>b)
+        console.log(a)
+
+for
+
+1.let n=Number(prompt("Введите число"))
+        for (let count = 1; count<=100  ; count++){
+            if(n%count===0){
+                console.log(count)
+            }
+        }
+
+
+2.  
