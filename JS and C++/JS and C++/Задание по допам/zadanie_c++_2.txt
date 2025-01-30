@@ -1,0 +1,128 @@
+1.
+#include <iostream>
+using namespace std;
+int main()
+{
+    string a;
+    cout<<"Напишите своё имя: ";
+    cin>>a;
+    cout<<"Привет, "<<a;
+    return 0;
+}
+
+
+
+2.
+#include <iostream>
+using namespace std;
+int main()
+{
+    const int current_year = 2024;
+    int birth_year;
+    cout<<"Ваш год рождения?";
+    cin>>birth_year;
+    cout<<""<<current_year - birth_year;
+    return 0;
+}
+3.
+#include <iostream>
+using namespace std;
+int main()
+{
+    int a ;
+    cout<<"Сколько сторона квадарата?";
+    cin>>a;
+    cout<<a * 4;
+    return 0;
+}
+
+4.
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main()
+{
+    float r ;
+    const float Pi = 3.14;
+    cout<<"Чему равен радиус?";
+    cin>>r;
+    cout<<Pi * pow(r, 2);
+    return 0;
+}
+
+
+
+5.
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main()
+{
+    int S;
+    int t;
+    cout<<"Чему равно расстояние?";
+    cin>>S;
+    cout<<"Чему равно время?";
+    cin>>t;
+    cout<<float(S / t);
+    return 0;
+}
+
+6.
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main()
+{
+    const float conv = 0.92;
+    int dollar;
+    cout<<"Сколько у вас долларов?";
+    cin>>dollar;
+    cout<<"Вы получите "<<dollar * conv<<" евро";
+    return 0;
+}   
+
+
+7.
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main()
+{
+    int Gb;
+    cout<<"Сколько у вас обьём флешки?";
+    cin>>Gb;
+    int size=820;
+    cout<<"У вас "<<(Gb * 1000) / size<<" памяти ";
+    return 0;
+}
+8.
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main()
+{
+    int money, cost;
+    cout<<"Введите сумму";
+    cin>>money;
+    cout<<"Введите цену";
+    cin>>cost;
+    cout<<"Количество шоколадок"<<money / cost<<   "\n";
+    cout<<"Сдача"<<money - ((money / cost ) * cost);
+    return 0;
+}
+9.
+
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main()
+{
+    int a;
+    cin>>a;
+    int hund = a / 100;
+    int tenth = (a % 100) / 10;
+    int one = a  % 10;
+    cout<<one * 100 + tenth * 10 + hund;
+    return 0;
+}

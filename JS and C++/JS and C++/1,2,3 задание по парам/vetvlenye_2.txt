@@ -1,0 +1,170 @@
+1. let a
+       a=parseInt(prompt("Введите ваш возраст:"))
+       if(0<=a&&a<=2){
+        alert('Вы ребенок');
+       }
+       else if (a>=3&&a<12){
+        alert('Вы ребенок')
+       }
+       else if (a>=12&&a<18){
+        alert('Вы подросток')
+       }
+       else if(a>=18&&a<60){
+        alert("Вы взрослый")
+       }
+       else{
+        alert("Вы пенсионер")
+       }
+
+
+
+2.    let number
+      number=parseInt(prompt("Выберите цифру от 0-9"))
+      if(number==0){
+        alert(")")
+      }
+      else if(number==1){
+        alert("!")
+      }
+      else if(number==2){
+        alert("@")
+      }
+      else if(number==3){
+        alert("#")
+      }
+      else if(number==4){
+        alert("$")
+      }
+      else if(number==5){
+        alert("%")
+      }
+      else if(number==6){
+        alert("^")
+      }
+      else if(number==7){
+        alert("&")
+      }
+      else if(number==8){
+        alert("*")
+      }
+      else if(number==9){
+        alert("(")
+      }
+      else{
+        alert("ERROR 404")
+      }
+
+
+
+3.            let number = prompt("Напишите трехзначное число");
+        if (number[0] === number[1] || number[1] === number[2] || number[0] === number[2]) {
+        alert("У вас есть одинаковые цифры");
+      } else {
+        alert("У вас нету одинаковых цифр");
+        }
+
+4.     let number
+      number=prompt("Введите год")
+      if((number%400 === 0) || (number%4===0 && number%100 !== 0 ) ){
+        alert("Ваш год високосный")
+      }
+      else{
+        alert("Ваш год не високосный")
+      }
+
+5.     let number
+      number=prompt("Введите пятизначное число")
+      if (number[0] === number[4] || number[1] === number[3]) {
+        alert("У вас палиндромом цифры");
+      } else {
+        alert("У вас не палиндромом цифры");
+        }
+
+
+6.    let AZN,EUR,USD,UAN,VALUE
+      USD=parseInt(prompt("Введите сколько у вас долларов?"))
+      VALUE=prompt("Введите в какой валюте вы хотите получить ответь:EUR,AZN,UAN?")
+      EUR=0.98;
+      AZN=1.70;
+      UAN=42.16;
+      if(VALUE==="EUR"){
+        alert("Вы получите: "+ (USD*EUR).toFixed(2)+" евро")
+      }
+      else if(VALUE==="AZN"){
+        alert("Вы получите: "+(USD*AZN).toFixed(2)+" маннат")
+      }
+      else if(VALUE==="UAN"){
+        alert("Вы получите: "+(USD*UAN).toFixed(2)+" гривен")
+      }
+      else{
+        alert("Вы ввели неправильно валюту!")
+      }
+
+
+7.     let summa
+      summa=Number(prompt("Введите сумму которую хотите оплатить?"))
+      a=200
+      b=300
+      c=500
+    
+      if(a <= summa && b > summa){
+        alert("У вас будет скидка 3%"+" ваша сумма скидки ровна "+(summa*0.03) )
+      }
+      else if(b <= summa && c > summa){
+        alert("У вас будет скидка 5%"+" ваша сумма скидки ровна "+(summa*0.05) )
+      }
+      else if(c <= summa){
+        alert("У вас будет скидка 7%"+" ваша сумма скидки ровна "+(summa*0.07) )
+      }
+      else{
+        alert("У вас не будет скидки")
+      }
+
+
+
+8.      let P,D, p
+     D=parseInt(prompt("Введите окружность круга"))
+     P=parseInt(prompt("Введите перимeтр квадрата"))
+     p=3.14
+     if(P/4 >= D/p){
+      alert(true)
+     }
+     else{
+      alert(false)
+     }
+
+
+9.    let a,b,c, sum = 0;
+    alert("Вопрос в каком жанре аниме, Проважающая в последний путь Фрирен?")
+    a=prompt("Введите свой вариант ответа. 1. Фэнтези 2. Романтика 3. Сёнен")
+
+    if(a === "Фэнтези"){
+        alert("У вас правильный ответ вы получаете 2 балла")
+        sum+=2;
+    }
+    else{
+        alert("Ошибка 0 баллов")
+    }
+    alert("Вопрос в каком жанре аниме, Кагуя в любви как на войне?")
+    b=prompt("Введите свой вариант ответа. 1. Фэнтези 2. Романтика 3. Сёнен")
+    if(b === "Романтика"){
+        alert("У вас правильный ответ вы получаете 2 балла")
+        sum+=2
+    }
+    else{
+        alert("Ошибка 0 баллов")
+    }
+    alert("Вопрос в каком жанре аниме, Джо Джо?")
+    c=prompt("Введите свой вариант ответа. 1. Фэнтези 2. Романтика 3. Сёнен")
+    if(c === "Сёнен"){
+        alert("У вас правильный ответ вы получаете 2 балла")
+        sum+=2
+    }
+    else{
+        alert("Ошибка 0 баллов")
+    }
+    alert(`Вы получили ${sum} очков`);
+
+
+
+10. 

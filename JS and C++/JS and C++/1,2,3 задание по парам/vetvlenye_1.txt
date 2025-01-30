@@ -1,0 +1,71 @@
+1 
+        let b;
+        b = parseInt(prompt("Введите число: "));
+        if (b<0) {
+            alert("Число отрицательное");
+        } else if (b>0) {
+            alert("Число положительное");
+        } else if (b==0) {
+            alert("Ваше число равно 0");
+        }
+
+2
+         let b;
+        b = parseInt(prompt("Сколько вам лет: "));
+        if (b<0) {
+            alert("ERROR 404");
+        } else if (b>1 &&  b <120) {
+            alert("Всё верно");
+        } else if (b >120) {
+            alert("ERROR 404");
+        }
+
+        
+3  let a,number_2,number_3;
+            a = prompt('Введите число:');
+            if (a < 0) {
+                number_2 = a ** 2;
+                number_3 = number2 ** 0.5;
+                alert(number3);
+            } else {
+                alert(a)
+            }
+     
+
+4      let hours, minuts, seconds;
+    hours = prompt('Какой час?');
+    minuts = prompt('Cколько минут?');
+    seconds = prompt('Сколько секунд?');
+    if (hours >= 0 && hours <= 23) {
+        if (minuts >= 0 && minuts <= 59) {
+            if (seconds >= 0 && seconds <= 59) {
+                alert('Время верное')
+            } else {
+                alert('Ошибка в секундах')
+            }
+        } else {
+            alert('Ошибка в минутах')
+        }
+    } else {
+        alert('Ошибка в часах')
+    }
+
+
+5     let x = parseInt(prompt("Введите x:"));
+    let y = parseInt(prompt("Введите y:"));
+    if (x === 0 && y === 0) {
+        alert("Точка находится в нулевой координате");
+    } else if (x > 0 && y > 0) {
+        alert("Точка находится в первой четверти");
+    } else if (x < 0 && y > 0) {
+        alert("Точка находится во второй четверти");
+    } else if (x < 0 && y < 0) {
+        alert("Точка находится в третьей четверти");
+    } else if (x > 0 && y < 0) {
+        alert("Точка находится в четвертой четверти");
+    }
+    else if (x === 0) {
+        alert("Точка находится на оси Y.");
+    } else if (y === 0) {
+        alert("Точка находится на оси X.");
+    }   

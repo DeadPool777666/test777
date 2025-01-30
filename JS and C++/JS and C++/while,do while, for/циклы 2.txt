@@ -1,0 +1,11 @@
+1.let min=Number(prompt("Введите минимальное число"))
+      let max=Number(prompt("Введите максимальное число"))
+      let sum = 0;
+      while(min<=max){
+        sum = min+sum;
+        min++
+      }
+      console.log(sum);
+
+
+2.
