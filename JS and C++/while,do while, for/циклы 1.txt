@@ -62,4 +62,22 @@ for
         }
 
 
-2.  
+2.  let min=Number(prompt("Введите минимальное число"))
+        let max=Number(prompt("Введите максимальное число"))
+        for (;min<=max; min++){
+            if(min%4===0){
+                console.log(min)
+            }
+        }
+
+3.   let num=Number(prompt("Введите число"));
+        let x = 2;
+        for (;num>x; x++){
+            if(num%x===0){
+                console.log("Не простое")
+            }
+            else{
+                console.log("Простое")
+                }
+        }
+    </script>
