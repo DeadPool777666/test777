@@ -7,22 +7,15 @@
 </head>
 <body>
     <script>
-  function vibor(params, a) {
-    if(params>a){
-      alert("-1")
-      return
+    function  ygolnik(a, b = a) {
+        if(b == 0){
+            return a*a
+        }
+        else{
+          return a * b
+        }
     }
-    else if(a>params){
-      alert("1")
-      return
-    }
-    else if(a==params){
-      alert("0")
-      return
-    } 
-  }
-  vibor(prompt(), prompt())
+    alert(ygolnik(Number(prompt()),Number(prompt())))
     </script>
-    <button onclick=vibor()> </button>
 </body>
 </html>

@@ -17,4 +17,30 @@
     </script>
     <button onclick=vibor()> </button>
 
-2.
+2.function factorial() {
+    const FactoNum = Number(prompt("Введите число"));
+        let resul = 1, step = 2;
+         while(FactoNum>=step ){
+            resul = step * resul
+            step++;
+         }
+         console.log(resul)
+  }
+  factorial()
+
+3. function  tri(a,b,c) {
+      return Number(`${a}${b}${c}`)
+  }
+  let resul = tri(prompt(),prompt(),prompt())
+  alert(resul)
+
+4. function  ygolnik(a, b = a) {
+        if(b == 0){
+            return a*a
+        }
+        else{
+          return a * b
+        }
+    }
+
+5.
