@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <script>
-    function  ygolnik(a, b = a) {
-        if(b == 0){
-            return a*a
-        }
-        else{
-          return a * b
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+ </head>
+ <body>
+  <script>
+   function vremya(hour, minut, sec) {
+    if (hour >= 24) {
+        hour = "00";
+        if
+         (minut >= 60) {
+            minut = "00";
+            if (sec >= 60) {
+                sec = "00";
+            }
         }
     }
-    alert(ygolnik(Number(prompt()),Number(prompt())))
-    </script>
-</body>
+    return `${hour}:${minut}:${sec}`;
+}
+
+console.log(vremya(Number(prompt()), Number(prompt()), Number(prompt())));
+  </script>
+ </body>
 </html>
