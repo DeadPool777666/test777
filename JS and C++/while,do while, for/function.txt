@@ -99,4 +99,16 @@
 
 console.log(vremya(Number(prompt()), Number(prompt()), Number(prompt())));
 
-8. 
+8.    function vremya(hour, minut, sec) {
+    if(hour>=1||minut>=1||sec>=1){
+        hour=hour*3600
+        minut=minut*60
+        sec=sec*1
+        alert(hour+minut+sec+" секунда")
+    }
+    else if(hour===0&&minut===0&sec===0){
+        alert("У вас 0 секунд")
+    }
+}
+
+9. 

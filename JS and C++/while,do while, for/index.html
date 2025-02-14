@@ -7,21 +7,14 @@
  </head>
  <body>
   <script>
-   function vremya(hour, minut, sec) {
-    if (hour >= 24) {
-        hour = "00";
-        if
-         (minut >= 60) {
-            minut = "00";
-            if (sec >= 60) {
-                sec = "00";
-            }
-        }
+   function vremya(sec=1) {
+    let hour, minut
+    if(sec===3600){
+        sec 
     }
-    return `${hour}:${minut}:${sec}`;
-}
+    }
 
-console.log(vremya(Number(prompt()), Number(prompt()), Number(prompt())));
+console.log(vremya(Number(prompt())));
   </script>
  </body>
 </html>
