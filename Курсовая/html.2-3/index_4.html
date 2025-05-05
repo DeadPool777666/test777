@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Кандидаты — ЛИЦА</title>
+  <link rel="stylesheet" href="/css/style_4.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__container">
+      <!-- Логотип -->
+      <a class="logo" href="/glavnaya.html">ЛИЦА. Кандидаты</a>
+  
+      <!-- Навигация -->
+      <nav class="nav">
+        <!-- Бургер-кнопка -->
+        <button class="nav__toggle" aria-label="Открыть меню">
+          <span class="nav__toggle-line"></span>
+          <span class="nav__toggle-line"></span>
+          <span class="nav__toggle-line"></span>
+        </button>
+  
+        <!-- Меню -->
+        <ul class="nav__list">
+          <li><a href="/glavnaya.html" class="nav__link">Главная</a></li>
+          <li><a href="/html.2-3/index_2.html" class="nav__link">Личный кабинет</a></li>
+          <li><a href="/html.2-3/index_3.html" class="nav__link">Календарь</a></li>
+          <li><a href="/html.2-3/index_4.html" class="nav__link">Кандидаты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main container">
+    <aside class="filters">
+      <h2>Фильтры</h2>
+      <form>
+        <label>Зарплата</label>
+        <input type="number" placeholder="от">
+        <input type="number" placeholder="до">
+
+        <label>Возраст</label>
+        <input type="number" placeholder="от">
+        <input type="number" placeholder="до">
+
+        <label>Пол</label>
+        <div class="gender">
+          <label><input type="radio" name="gender" checked> Все</label>
+          <label><input type="radio" name="gender"> Мужчины</label>
+          <label><input type="radio" name="gender"> Женщины</label>
+        </div>
+
+        <button type="submit">Применить</button>
+      </form>
+    </aside>
+
+    <section class="cards">
+      <div class="card">
+        <div class="tags"><span class="tag">part-time</span> <span class="tag">full-time</span></div>
+        <img src="/images/Avatar (2).png" alt="Кандидат">
+        <h3>Сергей Васильев</h3>
+        <p>QA-тестировщик</p>
+        <p class="details">Опыт: более 5 лет<br>Зарплата: от 1000 €</p>
+        <a href="#" class="button">Посмотреть справку</a>
+      </div>
+      <!-- Добавь другие карточки по аналогии -->
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; ООО «ЛИЦА»</p>
+    </div>
+  </footer>
+</body>
+</html>
+<script>
+  const toggle = document.querySelector('.nav__toggle');
+  const navList = document.querySelector('.nav__list');
+
+  toggle.addEventListener('click', () => {
+    navList.classList.toggle('nav__list--open');
+  });
+</script>

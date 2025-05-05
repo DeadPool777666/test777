@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ЛИЦА. Кандидаты – Главная</title>
+  <meta name="description" content="HR-портал «ЛИЦА. Кандидаты» — подбор и управление персоналом, интерактивный календарь событий">
+  <!-- Подключение основного CSS-файла -->
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+  <script src="./glavnaya.js"></script>
+</head>
+<body>
+  <!-- Шапка сайта -->
+  <header class="header">
+    <div class="container header__container">
+      <!-- Логотип -->
+      <a class="logo" href="/glavnaya.html">ЛИЦА. Кандидаты</a>
+      <!-- Навигация -->
+      <nav class="nav">
+        <!-- Кнопка бургер для мобильного меню -->
+        <button class="nav__toggle" aria-label="Открыть меню">
+          <span class="nav__toggle-line"></span>
+          <span class="nav__toggle-line"></span>
+          <span class="nav__toggle-line"></span>
+        </button>
+        <!-- Основные ссылки меню -->
+        <ul class="nav__list">
+          <li><a href="./glavnaya.html" class="nav__link">Главная</a></li>
+          <li><a href="./html.2-3/index_2.html" class="nav__link">Личный кабинет</a></li>
+          <li><a href="./html.2-3/index_3.html" class="nav__link">Календарь</a></li>
+          <li><a href="/html.2-3/index_4.html" class="nav__link">Кандидаты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero-блок -->
+    <section class="hero">
+      <div class="container hero__container">
+        <div class="hero__text">
+          <h1 class="hero__title">Нанимайте проверенных кандидатов</h1>
+          <p class="hero__subtitle">Мы уже нашли лучших собеседников</p>
+          <a href="#" class="btn hero__btn">Оставить заявку</a>
+        </div>
+        <div class="hero__image">
+          <img src="./images/main_image.png"alt="Иллюстрация"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Направления работы -->
+    <section class="directions">
+      <div class="container directions__container">
+        <h2 class="section-title">Выберите направление работы</h2>
+        <div class="directions__grid">
+          <article class="direction-card">
+            <img
+              src="images/direction_icon.png"
+              alt="Маркетинг"
+              class="direction-card__icon"
+            />
+            <h3 class="direction-card__title">Маркетинг</h3>
+          </article>
+          <article class="direction-card">
+            <img
+              src="images/disain.png"
+              alt="Дизайн"
+              class="direction-card__icon"
+            />
+            <h3 class="direction-card__title">Дизайн</h3>
+          </article>
+          <article class="direction-card">
+            <img
+              src="images/razrabotka.png"
+              alt="Разработка"
+              class="direction-card__icon"
+            />
+            <h3 class="direction-card__title">Разработка</h3>
+          </article>
+          <article class="direction-card">
+            <img
+              src="images/sales.png"
+              alt="Продажи"
+              class="direction-card__icon"
+            />
+            <h3 class="direction-card__title">Продажи</h3>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Почему выбирают -->
+    <section class="why-choose">
+      <div class="container why-choose__container">
+        <div class="why-choose__content">
+          <h2 class="section-title">Почему работодатели выбирают ЛИЦА?</h2>
+          <ul class="why-choose__list">
+            <li>Проверка компетенций</li>
+            <li>Экономия времени на поиск</li>
+            <li>Удобный интерфейс</li>
+            <li>Узкая специализация под задачи</li>
+          </ul>
+        </div>
+        <div class="why-choose__subscription">
+          <p class="why-choose__price ">
+            Кандидаты по подписке <span>4900₽</span> в месяц
+          </p>
+          <a href="#" class="btn why-choose__btn">Подключить</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- База кандидатов -->
+    <section class="candidates">
+      <div class="container candidates__container">
+        <h2 class="section-title">Как выглядит база кандидатов</h2>
+        <div class="candidates__grid">
+          <!-- Карточка 1 -->
+          <article class="candidate-card">
+            <img
+              src="./images/Avatar (1).png"
+              alt="Кандидат 1"
+              class="candidate-card__img"
+            />
+            <h3 class="candidate-card__name">Татьяна</h3>
+            <p class="candidate-card__position">Маркетолог</p>
+          </article>
+          <!-- Карточка 2 -->
+          <article class="candidate-card">
+            <img
+              src="./images/Avatar.png"
+              alt="Кандидат 2"
+              class="candidate-card__img"
+            />
+            <h3 class="candidate-card__name">Иван</h3>
+            <p class="candidate-card__position">UI/UX Дизайнер</p>
+          </article>
+          <!-- Карточка 3 -->
+          <article class="candidate-card">
+            <img
+              src="./images/Avatar (2).png"
+              alt="Кандидат 3"
+              class="candidate-card__img"
+            />
+            <h3 class="candidate-card__name">Михаил</h3>
+            <p class="candidate-card__position">Front-end Разработчик</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Форма подписки -->
+    <section class="subscription">
+      <div class="container subscription__container">
+        <img src="./images/image2.png" alt="Иллюстрация">
+        <h2 class="section-title">Подпишитесь на обновления базы</h2>
+        <form action="#" class="subscription__form">
+            <input
+              type="text"
+              placeholder="Введите вашe имя"
+              class="subscription__input"
+              required
+            />
+          </form>
+          <form action="#" class="subscription__form">
+            <input
+              type="tel"
+              placeholder="Введите ваш номер телефона"
+              class="subscription__input"
+              required
+            />
+          </form>
+        <form action="#" class="subscription__form">
+          <input
+            type="email"
+            placeholder="Введите ваш Email"
+            class="subscription__input"
+            required
+          />
+        </form>
+        <button type="submit" class="btn subscription__btn">Подписаться</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Подвал -->
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__top">
+        <a class="logo footer__logo" href="#">ЛИЦА. Кандидаты</a>
+        <ul class="footer__nav">
+          <li><a href="#">О компании</a></li>
+          <li><a href="#">Вакансии</a></li>
+          <li><a href="#">Контакты</a></li>
+          <li><a href="#">Политика конфиденциальности</a></li>
+        </ul>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2025 ЛИЦА. Кандидаты. Все права защищены.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+

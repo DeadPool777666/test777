@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Простой Календарь</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 20px;
+    }
+
+    .calendar {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 5px;
+    }
+
+    .day {
+      border: 1px solid gray;
+      padding: 10px;
+      height: 80px;
+      cursor: pointer;
+    }
+
+    .event {
+      font-size: 12px;
+      background: lightblue;
+      margin-top: 5px;
+      padding: 2px;
+    }
+
+    #addForm {
+      margin-top: 20px;
+      display: none;
+      border: 1px solid #ccc;
+      padding: 10px;
+      width: 250px;
+    }
+
+    #eventView {
+      margin-top: 20px;
+    }
+
+    button {
+      margin-top: 10px;
+      padding: 5px 10px;
+    }
+
+    /* Header styles */
+    .header {
+      background: #f1f1f1;
+      padding: 10px;
+    }
+
+    .header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .header .logo {
+      font-size: 1.5em;
+    }
+
+    .nav__list {
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+    }
+
+    .nav__list li {
+      margin-right: 20px;
+    }
+
+    .nav__list li a {
+      text-decoration: none;
+      color: black;
+    }
+
+    .search-user {
+      display: flex;
+      align-items: center;
+    }
+
+    .user-info {
+      margin-left: 10px;
+    }
+
+    .user-avatar {
+      background-color: #ccc;
+      border-radius: 50%;
+      padding: 5px;
+      width: 30px;
+      height: 30px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header__top">
+      <div class="logo">
+        <strong>ЛИЦА</strong><span>●</span>Кандидаты
+      </div>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li><a href="/glavnaya.html">Главная</a></li>
+          <li><a href="/html.2-3/index_2.html">Личный кабинет</a></li>
+          <li><a href="/html.2-3/index_3.html">Календарь</a></li>
+          <li><a href="/html.2-3/index_4.html">Кандидаты</a></li>
+        </ul>
+      </nav>
+  </header>
+
+  <!-- Calendar -->
+  <h2>Календарь</h2>
+  <div class="calendar" id="calendar"></div>
+
+  <button onclick="showForm()">+ Добавить задачу</button>
+
+  <div id="task-form" style="display: none;">
+    <input type="date" id="task-date">
+    <input type="text" id="task-text" placeholder="Введите задачу (минимум 3 слова)">
+    <button onclick="addTask()">Сохранить</button>
+    <button onclick="hideForm()">Отмена</button>
+  </div>
+
+  <div id="eventView"></div>
+
+  <script>
+    const calendar = document.getElementById("calendar");
+    const eventView = document.getElementById("eventView");
+    let tasks = JSON.parse(localStorage.getItem("myTasks")) || {};
+
+    function drawCalendar() {
+      const today = new Date();
+      const year = today.getFullYear();
+      const month = today.getMonth();
+      const days = new Date(year, month + 1, 0).getDate();
+
+      calendar.innerHTML = "";
+
+      for (let day = 1; day <= days; day++) {
+        const date = `${year}-${String(month + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
+        const div = document.createElement("div");
+        div.className = "day";
+        div.innerHTML = `<strong>${day}</strong>`;
+        div.onclick = () => showTasks(date);
+
+        if (tasks[date]) {
+          tasks[date].forEach(t => {
+            const ev = document.createElement("div");
+            ev.className = "event";
+            ev.textContent = t;
+            div.appendChild(ev);
+          });
+        }
+
+        calendar.appendChild(div);
+      }
+    }
+
+    function showForm() {
+      document.getElementById("task-form").style.display = "block";
+    }
+
+    function hideForm() {
+      document.getElementById("task-form").style.display = "none";
+    }
+
+    function addTask() {
+      const dateInput = document.getElementById("task-date");
+      const textInput = document.getElementById("task-text");
+      const dateValue = dateInput.value;
+      const textValue = textInput.value.trim();
+
+      // Проверка: есть ли дата и текст
+      if (!dateValue || !textValue) {
+        alert("Пожалуйста, заполните все поля.");
+        return;
+      }
+
+      // Проверка: дата — только текущий месяц и год
+      const selectedDate = new Date(dateValue);
+      const now = new Date();
+      if (
+        selectedDate.getFullYear() !== now.getFullYear() ||
+        selectedDate.getMonth() !== now.getMonth()
+      ) {
+        alert("Можно добавлять задачи только на текущий месяц и год.");
+        return;
+      }
+
+      // Проверка: минимум 3 слова
+      const wordCount = textValue.split(/\s+/).filter(word => word.length > 0).length;
+      if (wordCount < 3) {
+        alert("Задача должна содержать минимум 3 слова.");
+        return;
+      }
+
+      // Сохраняем задачу
+      if (!tasks[dateValue]) {
+        tasks[dateValue] = [];
+      }
+      tasks[dateValue].push(textValue);
+      localStorage.setItem("myTasks", JSON.stringify(tasks));
+
+      alert("Задача добавлена!");
+      hideForm();
+      drawCalendar(); // Обновляем календарь, чтобы отобразить новую задачу
+    }
+
+    drawCalendar();
+  </script>
+</body>
+</html>

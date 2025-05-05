@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Профиль пользователя</title>
+  <link rel="stylesheet" href="/css/style_2.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header__top">
+      <div class="logo">
+        <strong>ЛИЦА</strong><span>●</span>Кандидаты
+      </div>
+      <button class="burger" aria-label="Меню">
+        ☰
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li><a href="/glavnaya.html">Главная</a></li>
+          <li><a href="/html.2-3/index_2.html">Личный кабинет</a></li>
+          <li><a href="/html.2-3/index_3.html">Календарь</a></li>
+          <li><a href="/html.2-3/index_4.html">Кандидаты</a></li>
+        </ul>
+      </nav>
+      <div class="search-user">
+        <input type="text" placeholder="Поиск" />
+        <div class="user-info">
+          <span>Иннокентий</span>
+          <div class="user-avatar">И</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="container main-content">
+      <div class="profile-card">
+        <div class="profile-info">
+          <div class="avatar">И</div>
+          <div>
+            <h2>Иннокентий Петров</h2>
+            <p class="status">Подписка не активна</p>
+            <button class="btn">Активировать</button>
+            <a href="#" class="link red">Запросить счёт</a>
+          </div>
+        </div>
+
+        <div class="subscription-box">
+          <h3>Оформить подписку</h3>
+          <div class="option">
+            <span>1 месяц</span>
+            <strong>4 900 ₽</strong>
+            <button class="btn small">Оформить</button>
+          </div>
+          <div class="option">
+            <span>1 год</span>
+            <strong>49 000 ₽</strong>
+            <button class="btn small">Оформить</button>
+          </div>
+        </div>
+
+        <div class="info-box">
+          <p>Открыто контактов: <strong>0/50</strong> <a href="#">Докупить контакты</a></p>
+          <p>Просмотрено кандидатов: <strong>0/100</strong><br />
+          <a href="#">Скрыть из результатов<br/>уже просмотренных кандидатов</a></p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__content">
+      <div class="footer__col">
+        <h4>ЛИЦА.КАНДИДАТЫ</h4>
+        <ul>
+          <li><a href="#">Найти кандидата</a></li>
+          <li><a href="#">Попасть в базу</a></li>
+          <li><a href="#">О сервисе</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>ЛИЦА.РАБОТА</h4>
+        <ul>
+          <li><a href="#">Рекрутинг</a></li>
+          <li><a href="#">Конструктор подбора</a></li>
+          <li><a href="#">Аналитика подбора</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>О ПОРТАЛЕ</h4>
+        <ul>
+          <li><a href="#">Поддержка</a></li>
+          <li><a href="#">Обновления</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom container">
+      <span>ООО «ЛИЦА»</span>
+      <span>Реквизиты | Правовая информация</span>
+    </div>
+  </footer>
+</body>
+</html>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('.nav');
+
+    burger.addEventListener('click', () => {
+      nav.classList.toggle('open');
+    });
+  });
+</script>
